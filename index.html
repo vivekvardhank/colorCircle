@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+<script>
+   
+    let r=255;
+    let g=255;
+    let b=255;
+    let diameter=30;
+
+    function setup(){
+        createCanvas(windowWidth, windowWidth);
+        background(0);
+    }
+    function draw(){
+        circle(mouseX, mouseY, diameter);
+        noStroke();
+        fill(r,g,b,100);
+    }
+    function mousePressed(){
+        r=random(100,255);
+        g=random(100,255);
+        b=random(100,255);
+        diameter=random(16,64);
+    }
+
+</script>
+</body>
+
+</html>
